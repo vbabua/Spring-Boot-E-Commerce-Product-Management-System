@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 5432:2006
+    environment:
+      - POSTGRES_PASSWORD=root123
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=product_details
+  app:
+    container_name: app
+    image: app
+    build: ./
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres/product_details
+    depends_on:
+      - postgres
