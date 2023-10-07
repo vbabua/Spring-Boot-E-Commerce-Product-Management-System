@@ -56,7 +56,7 @@ To run the tests:
 Database configurations, hibernate settings, and other application properties can be found in the application.properties file.
 
 ## License
-[MIT License](https://choosealicense.com/licenses/mit/)
+[MIT License](https://github.com/vbabua/Spring-Boot-E-Commerce-Product-Management-System/blob/main/LICENSE)
 
 
 
