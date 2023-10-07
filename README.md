@@ -38,6 +38,25 @@ Easily run the application and database using Docker Compose.
 
 4. The application will be accessible at 'http://localhost:8080'
 
+## API Endpoints
+- Retrieve All Products: GET /products
+- Retrieve All Categories: GET /categories
+- Retrieve Products by Category: GET /product/{category}
+- Add a New Product: POST /product
+- Update Product: PUT /product
+
+## Testing
+The application includes unit tests for various components. Tests utilize JUnit 5, Spring Boot Test, and Mockito. 
+To run the tests:
+```bash
+./gradlew test
+```
+
+## Configuration
+Database configurations, hibernate settings, and other application properties can be found in the application.properties file.
+
+## License
+[MIT License](https://choosealicense.com/licenses/mit/)
 
 
 
